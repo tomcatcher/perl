@@ -11,8 +11,8 @@ use Sys::Syslog qw(:standard :macros);
 
 #Setting LDAP connection parameters
 
-my $userToAuthenticate = "ttudja1\@domain.terragroup.cz";
-my $passwd = "#mKimg17";
+my $userToAuthenticate = "user\@domain.net";
+my $passwd = "password";
 my $searchString = '(&(objectClass=person)(mail=*))';
 my $attrs = [ 'mail', 'displayName', 'telephoneNumber', 'title', 'whenchanged' ];
 my $base = "DC=domain,DC=terragroup,DC=cz";
